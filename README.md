@@ -6,10 +6,10 @@ This is the repository for the MCSS project. The project is a python module that
 
 ## Examples of tags
 
-Lets say we have 5 wav files that have different audio on them. We can add tags to better identify them and configure them for the application that we are using. Lets say the program has a option where you can add echo to a track and we want to put it on to chanel 3. We can add a tag to the channel and then use the tag to add the echo effect to the channel like this:
+Lets say we have 5 wav files that have different audio on them. We can add tags to better identify them and configure them for the application that we are using. Lets say the program has a option where you can add echo to a track and we want to put it on to channel 3. We can add a tag to the channel and then use the tag to add the echo effect to the channel like this:
 
 ```
-[["name=chanel1"], ["name=chanel2"], ["name=chanel3", "echo=true"], ["name=chanel4"], ["name=chanel5"]]
+[["name=channel1"], ["name=channel2"], ["name=channel3", "echo=true"], ["name=channel4"], ["name=channel5"]]
 ```
 
 Adding tags is optional to leave a `.mcss` file tags blank just put 
@@ -49,7 +49,7 @@ Then you can use the module like this:
 ```python
 audio_1 = open("audio_1.wav", "rb").read()
 audio_2 = open("audio_2.wav", "rb").read()
-tags = [["name=chanel1"], ["name=chanel2"]]
+tags = [["name=channel1"], ["name=channel2"]]
 metadata = ["title=My Multi Channel Song"]
 mcss_file = MCSS.compile([audio_1, audio_2], tags, metadata)
 open("song.mcss", "wb").write(mcss_file)

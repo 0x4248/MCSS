@@ -101,7 +101,7 @@ def extract_metadata(data):
 
 audio_1 = open("audio.wav", "rb").read()
 audio_2 = open("audio.wav", "rb").read()
-tags = [["name=chanel1"], ["name=chanel2"]]
+tags = [["name=channel1"], ["name=channel2"]]
 metadata = ["title=My Multi Channel Song"]
 mcss_file = compile_from_raw([audio_1, audio_2], tags, metadata)
 open("song.mcss", "wb").write(mcss_file)
