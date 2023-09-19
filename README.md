@@ -78,6 +78,28 @@ open("audio_1.wav", "wb").write(audio[0])
 open("audio_2.wav", "wb").write(audio[1])
 ```
 
+## File format
+
+This file format is used to store multi channel sound data and is used by MCSS.
+
+### File structure
+
+The magic identifier lets other programs know its a MCSS file. The File then has a `VERSION:` part this is the version of the file format. Then the start metadata number is placed in the file and the mata data is placed in a python like list `["title=My Multi Channel Song","artist=John Doe"]`. This is then followed by a end metadata number. Then the start tags number is placed in the file with the tags like this `[["name=channel1"], ["name=channel2"]]. This is then followed by a end tags number. Then for each channel there is a start channel number with audio data (commonly in WAV) and then a end channel number. The end of the file is defined where there is no more data.
+
+### Magic numbers
+
+There are `6` amount of magic numbers in this file format.
+
+| Magic number             | Description             |
+| ------------------------ | ----------------------- |
+| `4d435353`               | Magic identifier        |
+| `0F0F990F0F`             | Start metadata          |
+| `0F0F550F0F`             | End metadata            |
+| `0F0FAA0F0F`             | Start tags              |
+| `0F0FBB0F0F`             | End tags                |
+| `0F0FCC0F0F`             | Start channel           |
+| `0F0FDD0F0F`             | End channel             |
+
 ## Installation
 
 To install the module you need to clone the repository and then place the MCSS folder to where you want to use it.
