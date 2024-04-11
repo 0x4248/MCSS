@@ -2,7 +2,7 @@
 
 Multi channel sound system
 
-> This project meets the [Open Source File Format Standard](https://www.github.com/lewisevans2007/OSFFS).
+> This project meets the [Open Source File Format Standard](https://www.github.com/0x4248/OSFFS).
 
 This is the repository for the MCSS project. The project is a python module that compiles and parses multi channel sound system files (.mcss). The module is used to create a multi channel sound system from using .wav files and each channel can be given a tag to identify it.
 

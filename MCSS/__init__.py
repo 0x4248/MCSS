@@ -1,6 +1,6 @@
 # MCSS
 # Multi Channel Sound System. A file format for storing multi channel sound
-# Github: https://www.github.com/lewisevans2007/MCSS
+# Github: https://www.github.com/0x4248/MCSS
 # Author: Lewis Evans
 # Licence: GNU General Public Licence v3.0
 
