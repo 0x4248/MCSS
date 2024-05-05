@@ -106,6 +106,10 @@ There are `6` amount of magic numbers in this file format.
 
 To install the module you need to clone the repository and then place the MCSS folder to where you want to use it.
 
+## Pre-requisites
+
+This module requires Python 3.6 or higher to run.
+
 ## Licence
 
 This project is under the GNU General Public License v3.0 - see the [LICENCE](LICENCE) file for details
